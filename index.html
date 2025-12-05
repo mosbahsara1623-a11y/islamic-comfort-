@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سكينة • Divine Peace</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Basmala Header -->
+        <header class="basmala-header">
+            <div class="arabic-title">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</div>
+            <div class="english-subtitle">In the name of Allah, the Most Gracious, the Most Merciful</div>
+            <p class="instruction">Click each item for spiritual comfort</p>
+        </header>
+
+        <!-- Five Clickable Items -->
+        <div class="items-grid">
+            <!-- Item 1: Quran -->
+            <div class="item" id="item1" onclick="revealMessage(1)">
+                <div class="item-icon" id="icon1">📖</div>
+                <div class="item-title">القُرْآن‎</div>
+                <div class="item-subtitle">The Quran</div>
+            </div>
+
+            <!-- Item 2: Prayer -->
+            <div class="item" id="item2" onclick="revealMessage(2)">
+                <div class="item-icon" id="icon2">🕌</div>
+                <div class="item-title">الصَّلاة‎</div>
+                <div class="item-subtitle">The Prayer</div>
+            </div>
+
+            <!-- Item 3: Remembrance -->
+            <div class="item" id="item3" onclick="revealMessage(3)">
+                <div class="item-icon" id="icon3">📿</div>
+                <div class="item-title">التَّسْبِيح‎</div>
+                <div class="item-subtitle">Remembrance</div>
+            </div>
+
+            <!-- Item 4: Patience -->
+            <div class="item" id="item4" onclick="revealMessage(4)">
+                <div class="item-icon" id="icon4">🌙</div>
+                <div class="item-title">الصَّبْر‎</div>
+                <div class="item-subtitle">Patience</div>
+            </div>
+
+            <!-- Item 5: Mercy -->
+            <div class="item" id="item5" onclick="revealMessage(5)">
+                <div class="item-icon" id="icon5">💖</div>
+                <div class="item-title">الرَّحْمَة‎</div>
+                <div class="item-subtitle">Mercy</div>
+            </div>
+        </div>
+
+        <!-- Message Display -->
+        <div class="message-box" id="messageBox">
+            <div class="message-content">
+                <div class="arabic-text" id="arabicText">إِنَّ مَعَ الْعُسْرِ يُسْرًا</div>
+                <div class="transliteration" id="transliteration">Inna ma'al-usri yusra</div>
+                <div class="translation" id="translation">"Indeed, with hardship comes ease." (Quran 94:6)</div>
+                <div class="reflection" id="reflection">Click any item above to begin receiving spiritual comfort...</div>
+            </div>
+        </div>
+
+        <!-- Progress -->
+        <div class="progress">
+            <div class="progress-text">Reminders collected: <span id="counter">0</span>/5</div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+
+        <!-- Final Surprise -->
+        <div class="final-surprise" id="finalSurprise">
+            <div class="final-arabic">وَاصْبِرْ لِحُكْمِ رَبِّكَ فَإِنَّكَ بِأَعْيُنِنَا</div>
+            <div class="final-translation">"And be patient for the decision of your Lord, for indeed, you are in Our eyes." (Quran 52:48)</div>
+            <div class="final-message">
+                <p>Allah is watching over you with love. This difficulty is temporary. Your faith is eternal.</p>
+                <p>You are never alone. May Allah's peace (سكينة) descend upon your heart.</p>
+                <p class="signature">— Made for you with care 🤲</p>
+            </div>
+            <button class="reset-btn" onclick="resetAll()"><i class="fas fa-redo"></i> Experience Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
